@@ -1,0 +1,4 @@
+Opcional: frames del video vertical (9:16) para celulares, con el mismo formato:
+terra_0001.webp, terra_0002.webp ...
+
+Luego, en index.html, cambia `frames: 0` dentro de SEQ.vertical por el total de frames.

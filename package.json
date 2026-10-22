@@ -1,0 +1,13 @@
+{
+  "name": "terra-pizza",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo web de Terra Pizza (San Carlos, Ñuble) con pedidos por WhatsApp",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

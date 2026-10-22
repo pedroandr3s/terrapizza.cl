@@ -1,0 +1,4 @@
+Aquí van los frames del video de la intro (16:9), numerados así:
+terra_0001.webp, terra_0002.webp, terra_0003.webp ...
+
+Luego, en index.html, cambia `frames: 0` por el total de frames dentro de la constante SEQ.

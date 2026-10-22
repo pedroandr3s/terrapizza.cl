@@ -14,10 +14,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Yellowtail&display=swap" rel="stylesheet">
 <script>
-  /* La intro se muestra una vez por sesión y nunca con movimiento reducido. */
+  /* La intro se muestra en cada visita y nunca con movimiento reducido. */
   (function () {
     var show = true;
-    try { if (sessionStorage.getItem('terra-intro')) show = false; } catch (e) {}
     if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) show = false;
     if (show) document.documentElement.classList.add('is-intro');
   })();
@@ -1264,7 +1263,6 @@
     intro.remove();
     page.style.transform = '';
     root.classList.remove('is-intro');
-    try { sessionStorage.setItem('terra-intro', '1'); } catch (e) {}
   }
 
   function skip() {

@@ -21,7 +21,7 @@ Alternativas sin Node: `python -m http.server 5173` o `npx serve .` dentro de es
 ```
 terra-pizza/
 ├── index.html              Página completa (estilos y script incluidos)
-├── server.js               Servidor local sin dependencias
+├── dev-server.js           Servidor local sin dependencias (sirve public/)
 ├── assets/                 Logo, favicon y recortes de la mascota
 │   ├── mascota-scooter.webp   Mascota en scooter (intro)
 │   ├── mascota-caja.webp      Frente de la caja: tapa las pizzas al entrar a la mochila

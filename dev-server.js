@@ -1,12 +1,12 @@
 // Servidor local sin dependencias para Terra Pizza.
-// Uso:  npm start   (o: node server.js)  ->  http://localhost:5173
+// Uso:  npm start   (o: node dev-server.js)  ->  http://localhost:5173
 // Otro puerto en PowerShell:  $env:PORT=3000; npm start
 
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const ROOT = __dirname;
+const ROOT = path.join(__dirname, 'public');
 const PORT = Number(process.env.PORT) || 5173;
 
 const TYPES = {
